@@ -1,14 +1,16 @@
-// src/App.jsx
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TimeTableUpload from './pages/TimeTableUpload.jsx';
+import LoginForm from './pages/Loginform.jsx';
 
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<TimeTableUpload />} />
-        {/* Add more routes here as needed */}
+        <Route path="/login" element={<LoginForm />} />
+       
       </Routes>
     </Router>
   );
